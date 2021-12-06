@@ -57,6 +57,7 @@
                 app:layout_constraintTop_toBottomOf="@id/tourImageView" />
 
 
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/audio_tours"
                 android:layout_width="0dp"
@@ -69,11 +70,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/titleTextView" />
 
+
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/starImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
+                android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toStartOf="@id/ratingTextView"
                 app:layout_constraintTop_toBottomOf="@id/titleTextView"
                 app:srcCompat="@android:drawable/btn_star_big_on" />
@@ -82,12 +85,21 @@
                 android:id="@+id/ratingTextView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
+                android:layout_marginEnd="56dp"
                 android:text="@string/rating"
                 android:textAlignment="textEnd"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/titleTextView" />
 
+            <TextView
+                android:id="@+id/ratingCountTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/count"
+                android:textAlignment="textEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleTextView" />
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/durationImageView"
@@ -156,13 +168,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="15dp"
+                android:layout_marginEnd="48dp"
                 android:text="@string/price"
                 android:textAlignment="viewStart"
                 android:textSize="28sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/fromTextViewRight" />
 
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/euroImageView"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fromTextViewRight"
+                app:srcCompat="@drawable/ic_baseline_euro_symbol_24" />
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/areaImageView"

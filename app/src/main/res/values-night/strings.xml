@@ -8,4 +8,6 @@
     <string name="minutes">minutes</string>
     <string name="duration">Duration:</string>
     <string name="rating">rating</string>
+    <string name="rating_count">rating count</string>
+    <string name="count">count</string>
 </resources>

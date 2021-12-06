@@ -43,7 +43,8 @@ class MainActivity : AppCompatActivity() {
     fun observeAnyChange() {
         toursViewModel.getToursFromRepository().observe(this, {
             binding.titleTextView.setText(it?.title)
-            binding.ratingTextView.setText(it?.average_rating)
+            binding.ratingTextView.setText(it?.average_rating + "/5")
+            binding.ratingCountTextView.setText("(" + it?.rating_count.toString() + ")")
             binding.priceTextViewRight.setText(it?.retail_price)
             binding.durationTextViewRight.setText(it?.duration + " minutes")
             Picasso.get().load(it.thumbnail).into(binding.tourImageView)
