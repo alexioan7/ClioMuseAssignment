@@ -1,6 +1,6 @@
 package com.alexandros.cliomuseassignment.api.responseModel
 
-data class Tour(
+data class TourData(
     val average_rating: String,
     val duration: String,
     val header_image: String,
