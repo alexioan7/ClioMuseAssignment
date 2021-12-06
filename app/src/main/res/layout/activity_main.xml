@@ -50,6 +50,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
                 android:textAlignment="center"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -114,6 +115,8 @@
                 android:layout_height="wrap_content"
 
                 android:text="@string/minutes"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@id/durationTextView"
                 app:layout_constraintTop_toBottomOf="@id/audio_tours" />
 
@@ -155,6 +158,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="15dp"
                 android:text="@string/price"
+                android:textAlignment="viewStart"
+                android:textSize="28sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/fromTextViewRight" />
 
